@@ -1,0 +1,61 @@
+<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<div id="div0">
+  <div id="div1">
+    <button class="btn-minus" onClick="minus()">-</button>
+    <input id="input1" class='disabled' value=0>
+    <button class="btn-plus" onClick="plus()">+</button>
+  </div>
+</div>
+
+<style>
+
+	#input1 {
+		height:20px;
+	}
+
+	.disabled {
+		background-color:#faa;
+		color:white;
+	}
+	
+</style>
+
+<script>
+	const min = 0
+	const max = 10
+
+	function minus() {
+		var input = $("#input1")
+		var num = parseInt(input.val())
+		if (num > min) {
+			num = num - 1
+			input.val(num)
+		} else {
+			return false
+		}
+		checkNumberIsAvailable()
+	}
+	
+	function plus() {
+		var input = $("#input1")
+		var num = parseInt(input.val())
+		if (num < max) {
+			num = num + 1
+			input.val(num)
+		} else {
+			return false
+		}
+		checkNumberIsAvailable()
+	}
+	
+	function checkNumberIsAvailable() {
+		var num = parseInt($('#input1').val())
+		if (num >= max) {
+			$('#input1').addClass("disabled")
+		} else if (num <= min) {
+			$('#input1').addClass("disabled")
+		} else {
+			$('#input1').removeClass("disabled")
+		}
+	}
+</script>

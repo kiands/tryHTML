@@ -1,0 +1,54 @@
+<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<h1>todos</h1>
+<input id="add"><button id="addbtn" onClick="addTodo()">添加</button>
+<div>
+	<ul id="todos"></ul>
+</div>
+
+<script>
+	function addTodo() {
+		$('#todos').append(
+			'<li>'+
+			'<span>'+
+			$("#add").val()+
+			'</span>'+
+			'<button id="btn_mut" onClick="mut_todo(this)">修改</button>'+
+			'<button id="btn_del" onClick="del_todo(this)">删除</button></li>'
+		)
+		$('#add').val("")
+	}
+
+	function mut_todo(obj) {
+		//$('#btn_mut').parent().append('<input id="mutation"><button id="subbtn" onClick="submit()">提交</button>')
+		//$(obj).attr("disabled", true)
+		var PreValue = $(obj).prev().text()
+		$(obj).parent().html(
+			'<input id="mutation" value=' + PreValue + '><button id="subbtn" onClick="submit(this)">提交</button>'
+			//'<input id="mutation"><button id="subbtn" onClick="submit(this)">提交</button>'
+		)
+	}
+
+	function del_todo(obj) {
+		//obj = $('#btn_del').parent().attr('id')
+		//$('#'+obj).remove()
+		//$("#btn_del").parent().remove()
+		$(obj).parent().remove()
+	}
+	
+	function submit(obj) {
+		$(obj).parent().html(
+			'<span>'+
+			$(obj).prev().val()+
+			'</span>'+
+			'<button id="btn_mut" onClick="mut_todo(this)">修改</button>'+
+			'<button id="btn_del" onClick="del_todo(this)">删除</button></li>'
+		)
+	}
+	/*
+	$(document).click(function(e) { // 在页面任意位置点击而触发此事件
+		alert($(e.target).attr('id'))
+	})
+	这三行似乎放哪都全局触发
+	还有一种是只触发一次
+	*/
+</script>
