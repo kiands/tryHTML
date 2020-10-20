@@ -1,0 +1,57 @@
+<div id="div0">
+  <div id="div1">
+    <button class="btn-minus" onClick="minus()" disabled>-</button>
+    <input id="input1" class='disabled' value=0>
+    <button class="btn-plus" onClick="plus()">+</button>
+  </div>
+</div>
+
+<style>
+
+	#input1 {
+		height:20px;
+	}
+
+	.disabled {
+		background-color:#faa;
+		color:white;
+	}
+	
+</style>
+
+<script>
+	function set_limit(el, btn){
+		el.className = 'disabled'
+		btn[0].setAttribute('disabled', true)
+	}
+
+	function rm_limit(el){
+		el.className = ''
+		for (var i=0; i < document.getElementsByTagName('button').length; i++)
+		{ 
+			document.getElementsByTagName('button')[i].removeAttribute('disabled')
+		}
+	}
+
+	function minus() {
+		var input = document.getElementById("input1")
+		var num = input.value
+		rm_limit(input)
+		num = num*1 - 1
+		input.value = num
+  		if(num == 0){
+    			set_limit(input, document.getElementsByClassName("btn-minus"))
+		}
+	}
+	
+	function plus() {
+		var input = document.getElementById("input1")
+		var num = input.value;
+		rm_limit(input)
+		num = num*1 + 1
+		input.value = num
+  		if(num == 10){
+    			set_limit(input, document.getElementsByClassName("btn-plus"))
+		}
+	}
+</script>
