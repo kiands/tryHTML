@@ -1,0 +1,516 @@
+<script src="http://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+<div id="app">
+	<div class="sidebar">
+		<div class="sidebar__header">
+			<img class="logo" />
+			<h1 class="site-name">Administrator</h1>
+		</div>
+		<div class="sidebar_content">
+			<ul class="navigation">
+				<li class="expand">
+					<span style="color: #033C73"><strong>MAIN NAVIGATION</strong></span>
+				</li>
+				<li class="navigation-link">
+					<img class="navigation-link__icon" />
+					<span class="navigation-link__text">Dashboards</span>
+				</li>
+				<li class="navigation-link">
+					<img class="navigation-link__icon" />
+					<span class="navigation-link__text">Pages</span>
+				</li>
+				<li class="expand">
+					<span style="color: #033C73"><strong>BOOTSTRAP COMPONENTS</strong></span>
+				</li>
+				<li class="navigation-link">
+					<img class="navigation-link__icon" />
+					<span class="navigation-link__text">Elements</span>
+				</li>
+				<li class="navigation-link">
+					<img class="navigation-link__icon" />
+					<span class="navigation-link__text">Components</span>
+				</li><li class="navigation-link">
+					<img class="navigation-link__icon" />
+					<span class="navigation-link__text">Form Elements</span>
+				</li>
+				<li class="navigation-link">
+					<img class="navigation-link__icon" />
+					<span class="navigation-link__text">Tables</span>
+				</li>
+				<li class="expand">
+					<span style="color: #033C73"><strong>DASHBOARD BOXES</strong></span>
+				</li>
+				<li class="navigation-link">
+					<img class="navigation-link__icon" />
+					<span class="navigation-link__text">Chart Boxes</span>
+				</li>
+				<li class="expand">
+					<span style="color: #033C73"><strong>CHARTS</strong></span>
+				</li>
+				<li class="navigation-link">
+					<img class="navigation-link__icon" />
+					<span class="navigation-link__text">ChartJS</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="workspace">
+		<div class="workspace__header">
+			<div class="header-controls--left">
+				<img class="control-item icon" />
+				<img class="control-item icon" />
+				<span>inspector</span>
+			</div>
+			<div class="header-controls--right">
+				<img class="control-item icon" />
+				<img class="control-item icon" />
+				<img class="control-item avatar" />
+				<span class="control-item username">John Doe</span>
+			</div>
+		</div>
+		<div class="workspace__content">
+			<div id="div_r1">
+				<span>Portfolio Performance</span>
+				<hr>
+				<div id="div_r1_center">
+					<div class="div_r1_card">
+						<div class="r1_card_left">
+							<span>img</span>
+						</div>
+						<div class="r1_card_right">
+							<span style="color: gray">Cash Deposits</span>
+							<span style="color: #343a40; font-size: 48px">1,7M</span>
+							<div>
+								<span style="color: #DD5600">↓54.1%</span>
+								<span style="color: #6f42c1">less earnings</span>
+							</div>
+						</div>
+					</div>
+					<div class="div_r1_card">
+						<div class="r1_card_left">
+							<span>img</span>
+						</div>
+						<div class="r1_card_right">
+							<span style="color: gray">Invested Dividents</span>
+							<span style="color: #343a40; font-size: 48px">9M</span>
+							<div>
+								<span style="color: #6f42c1">Grow Rate</span>
+								<span style="color: #2FA4E7">↓14.1%</span>
+							</div>
+						</div>
+					</div>
+					<div class="div_r1_card">
+						<div class="r1_card_left">
+							<span>img</span>
+						</div>
+						<div class="r1_card_right">
+							<span style="color: gray">Capital Gains</span>
+							<span style="color: #343a40; font-size: 48px">$563</span>
+							<div>
+								<span style="color: #6f42c1">Increased by</span>
+								<span style="color: #DD5600">↑7.35%</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="centralized_button">
+					<button>View Complete Report</button>
+				</div>
+			</div>
+			<div id="div_r2">
+				<span>Company Agents Status</span>
+				<hr>
+				<div id="div_r2_center">
+					<table id="div_r2_table">
+						<div class="div_r2_tr">
+							<span class="div_r2_items"><strong>#</strong></span><span class="div_r2_items"><strong>Avatar</strong></span><span class="div_r2_items"><strong>Name</strong></span><span class="div_r2_items"><strong>Company</strong></span><span class="div_r2_items"><strong>Status</strong></span><span class="div_r2_items"><strong>Due Date</strong></span><span class="div_r2_items"><strong>Target Achievement</strong></span><span class="div_r2_items"><strong>Actions</strong></span>
+						</div>
+						<div class="div_r2_tr">
+							<span class="div_r2_normal">#54</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Juan C. Cargill</span><span class="div_r2_normal">Micro Electronics</span><span class="div_r2_normal">Canceled</span><span class="div_r2_normal">12 Dec</span><span class="div_r2_normal">71%</span><span class="div_r2_normal">Hire|Fire</span>
+						</div>
+						<div class="div_r2_tr">
+							<span class="div_r2_normal">#55</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Johnathan Phelan</span><span class="div_r2_normal">Hatchworks</span><span class="div_r2_normal">On Hold</span><span class="div_r2_normal">12 Dec</span><span class="div_r2_normal">54%</span><span class="div_r2_normal">Hire|Fire</span>
+						</div>
+						<div class="div_r2_tr">
+							<span class="div_r2_normal">#56</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Darrell Lowe</span><span class="div_r2_normal">Riddle Electronics</span><span class="div_r2_normal">In Progress</span><span class="div_r2_normal">12 Dec</span><span class="div_r2_normal">97%</span><span class="div_r2_normal">Hire|Fire</span>
+						</div>
+						<div class="div_r2_tr">
+							<span class="div_r2_normal">#57</span><span class="div_r2_normal">#</span><span class="div_r2_normal">George T. Cottrell</span><span class="div_r2_normal">Pixelcloud</span><span class="div_r2_normal">Completed</span><span class="div_r2_normal">12 Dec</span><span class="div_r2_normal">88%</span><span class="div_r2_normal">Hire|Fire</span>
+						</div>
+					</table>
+				</div>
+				<hr>
+				<div class="centralized_button">
+					<button>View Complete Report</button>
+				</div>
+			</div>
+			<div id="div_r4">
+				<div class="r4_space_left">
+					<div id="r4_space_todos">
+						<h1>Task List</h1>
+						<input id="add"><button id="addbtn" onClick="addTodo()">添加</button>
+						<div>
+							<ul id="todos"></ul>
+						</div>
+					</div>
+				</div>
+				<div class="r4_space_left">
+					<div class="r4_card_group_left">
+						<div class="r4_card" style="border: 1px solid #73A839; border-bottom: 3px solid #73A839">
+							<span><strong>$874</strong></span>
+							<span style="color: grey">sales last month</span>
+						</div>
+						<div class="r4_card" style="border: 1px solid #DD5600; border-bottom: 3px solid #DD5600">
+							<span><strong>$1286</strong></span>
+							<span style="color: grey">last month sales</span>
+						</div>
+						<div class="r4_card" style="border: 1px solid #2FA4E7; border-bottom: 3px solid #2FA4E7">
+							<span><strong>$1283</strong></span>
+							<span style="color: grey">Sales income</span>
+						</div>
+					</div>
+					<div class="r4_card_group_right">
+						<div class="r4_card" style="border: 1px solid #033C73; border-bottom: 3px solid #033C73">
+							<span><strong>$1283</strong></span>
+							<span style="color: grey">Sales Income</span>
+						</div>
+						<div class="r4_card" style="border: 1px solid #C71C22; border-bottom: 3px solid #C71C22">
+							<span><strong>$564</strong></span>
+							<span style="color: grey">total revenue</span>
+						</div>
+						<div class="r4_card" style="border: 1px solid #DD5600; border-bottom: 3px solid #DD5600">
+							<span><strong>$874</strong></span>
+							<span style="color: grey">sales last month</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="div_r5">
+				<div class="div_r5_space">
+					<div class="r5_card">
+						<div class="r5_card_left">
+							<span><strong>Total Orders</strong></span>
+							<span style="color: grey">Last year expenses</span>
+						</div>
+						<div class="r5_card_right">
+							<span style="color: 73A839; font-size: 24px"><strong>1896</strong></span>
+						</div>
+					</div>
+					<div class="r5_card">
+						<div class="r5_card_left">
+							<span><strong>Followers</strong></span>
+							<span style="color: grey">People Interested</span>
+						</div>
+						<div class="r5_card_right">
+							<span style="color: C71C22; font-size: 24px"><strong>45.9%</strong></span>
+						</div>
+					</div>
+					<div class="r5_card">
+						<div class="r5_card_left">
+							<span><strong>Total Orders</strong></span>
+							<span style="color: grey">Last year expenses</span>
+						</div>
+						<div class="r5_card_right">
+							<span style="color: 73A839; font-size: 24px"><strong>1896</strong></span>
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class="div_r5_space">
+					<div class="r5_card">
+						<div class="r5_card_left">
+							<span><strong>Clients</strong></span>
+							<span style="color: grey">Total Clients Profit</span>
+						</div>
+						<div class="r5_card_right">
+							<span style="color: 033C73; font-size: 24px"><strong>$12.6K</strong></span>
+						</div>
+					</div>
+					<div class="r5_card">
+						<div class="r5_card_left">
+							<span><strong>Products Sold</strong></span>
+							<span style="color: grey">Total revenue streams</span>
+						</div>
+						<div class="r5_card_right">
+							<span style="color: DD5600; font-size: 24px"><strong>$3M</strong></span>
+						</div>
+					</div>
+					<div class="r5_card">
+						<div class="r5_card_left">
+							<span><strong>Clients</strong></span>
+							<span style="color: grey">Total Clients Profit</span>
+						</div>
+						<div class="r5_card_right">
+							<span style="color: 033C73; font-size: 24px"><strong>$12.6K</strong></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<style>
+	#app {
+		display: flex;
+		flex-direction: row;
+	}
+	
+	.sidebar {
+		margin: 0;
+		display: flex;
+		flex-direction: column
+	}
+	
+	.sidebar__header {
+		height: 80px;
+		border: 1px solid #000;
+		margin: 0;
+		display: flex;
+		align-items: center
+	}
+	
+	.sidebar_content {
+		border-left: 1px solid #000;
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+		margin: 0;
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1
+	}
+	
+	.navigation {
+		margin: 10;
+		padding: 0;
+		display:flex;
+		flex-direction: column;
+		flex-grow: 1
+	}
+	
+	.workspace {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1
+	}
+	
+	.workspace__header {
+		height: 80px;
+		border-top: 1px solid #000;
+		border-right: 1px solid #000;
+		border-bottom: 1px solid #000;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center
+	}
+	
+	.workspace__content {
+		margin: 20px
+	}
+	
+	.expand {
+		margin-bottom:10px;
+		list-style: none
+	}
+	
+	.navigation-link {
+		color: grey;
+		margin-left: 25px;
+		margin-bottom: 10px;
+		list-style: none
+	}
+	
+	.centralized_button {
+		display: flex;
+		justify-content: center
+	}
+	
+	#div_r1{
+		border: 1px solid #000;
+		border-radius: 3px;
+		padding: 8px;
+		margin-bottom: 20px
+	}
+	
+	#div_r1_center {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	
+	.div_r1_card {
+		width: 33%;
+		display: flex;
+		justify-content: start;
+	}
+	
+	.r1_card_left {
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+	
+	.r1_card_right {
+		display: flex;
+		flex-direction: column
+	}
+	
+	#div_r2 {
+		border: 1px solid #000;
+		border-radius: 3px;
+		padding: 8px;
+		margin-bottom: 20px
+	}
+	
+	.div_r2_tr {
+		display: flex;
+		flex-direction: row;
+		justify-content: start
+	}
+	
+	.div_r2_items {
+		width: 12.5%;
+		text-align: center
+	}
+	
+	.div_r2_normal {
+		width: 12.5%;
+		text-align: center
+	}
+	
+	#div_r4 {
+		border: 1px solid #000;
+		border-radius: 3px;
+		padding: 8px;
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between
+	}
+	
+	.r4_space_left {
+		width: 50%;
+		display: flex;
+	}
+	
+	#r4_space_todos {
+		padding: 20px;
+		margin: 20px
+	}
+	
+	.r4_space_right {
+		width: 50%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between
+	}
+	
+	.r4_card_group_left {
+		margin-top:30px;
+		width: 50%;
+		display: flex;
+		flex-direction: column
+	}
+	
+	.r4_card_group_right {
+		margin-top:30px;
+		width: 50%;
+		display: flex;
+		flex-direction: column
+	}
+	
+	.r4_card {
+		border-radius: 3px;
+		padding-top: 60px;
+		padding-left: 20px;
+		padding-bottom: 20px;
+		margin-right: 30px;
+		margin-bottom: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: end
+	}
+	
+	#div_r5 {
+		border: 1px solid #000;
+		border-radius: 3px;
+		padding: 8px
+	}
+	
+	.div_r5_space {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between
+	}
+	
+	.r5_card {
+		margin-left: 10px;
+		margin-right: 10px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-grow: 1
+	}
+	
+	.r5_card_left {
+		display: flex;
+		flex-direction: column
+	}
+	
+	.r5_card_right {
+		display: flex;
+		justify-content: center;
+		align-items: center
+	}
+</style>
+
+<script>
+	function addTodo() {
+		$('#todos').append(
+			'<li>'+
+			'<span>'+
+			$("#add").val()+
+			'</span>'+
+			'<button id="btn_mut" onClick="mut_todo(this)">修改</button>'+
+			'<button id="btn_del" onClick="del_todo(this)">删除</button></li>'
+		)
+		$('#add').val("")
+	}
+
+	function mut_todo(obj) {
+		//$('#btn_mut').parent().append('<input id="mutation"><button id="subbtn" onClick="submit()">提交</button>')
+		//$(obj).attr("disabled", true)
+		var PreValue = $(obj).prev().text()
+		$(obj).parent().html(
+			'<input id="mutation" value=' + PreValue + '><button id="subbtn" onClick="submit(this)">提交</button>'
+			//'<input id="mutation"><button id="subbtn" onClick="submit(this)">提交</button>'
+		)
+	}
+
+	function del_todo(obj) {
+		//obj = $('#btn_del').parent().attr('id')
+		//$('#'+obj).remove()
+		//$("#btn_del").parent().remove()
+		$(obj).parent().remove()
+	}
+	
+	function submit(obj) {
+		$(obj).parent().html(
+			'<span>'+
+			$(obj).prev().val()+
+			'</span>'+
+			'<button id="btn_mut" onClick="mut_todo(this)">修改</button>'+
+			'<button id="btn_del" onClick="del_todo(this)">删除</button></li>'
+		)
+	}
+	/*
+	$(document).click(function(e) { // 在页面任意位置点击而触发此事件
+		alert($(e.target).attr('id'))
+	})
+	这三行似乎放哪都全局触发
+	还有一种是只触发一次
+	*/
+</script>
