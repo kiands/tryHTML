@@ -144,6 +144,61 @@
 					<button>View Complete Report</button>
 				</div>
 			</div>
+			<div id="div_r3">
+				<div id="r3_space_left">
+					<span style="margin-left: 20px">Technical Suport</span>
+					<hr>
+					<div id="r3_space_left_center">
+						<span style="margin-top: 20px; margin-left: 20px; color: grey">HELPDESK TICKETS</span>
+						<div style="display: flex; flex-direction: row">
+							<span style="margin-top: 20px; margin-left: 20px; font-size: 36px; color: #DD5600"><strong>34</strong></span>
+							<span style="margin-top: 41px; margin-left: 20px">5%</span>
+							<span style="margin-top: 41px; margin-left: 20px; color: black">increase</span>
+						</div>
+						<div style="margin-left: 20px; margin-right: 20px">
+							<img src="assets/r3_table.PNG" style="width: 100%" />
+						</div>
+						<span style="margin-top: 20px; margin-left: 20px; margin-bottom: 12px; color: grey">SALES PROGRESS</span>
+					</div>
+					<hr>
+					<div id="r3_space_left_center">
+						<span style="margin-top: 20px; margin-left: 20px; color: grey">HELPDESK TICKETS</span>
+						<div style="display: flex; flex-direction: row">
+							<span style="margin-top: 20px; margin-left: 20px; font-size: 36px; color: #DD5600"><strong>34</strong></span>
+							<span style="margin-top: 41px; margin-left: 20px">5%</span>
+							<span style="margin-top: 41px; margin-left: 20px; color: black">increase</span>
+						</div>
+						<div style="margin-left: 20px; margin-right: 20px">
+							
+						</div>
+						<span style="margin-top: 20px; margin-left: 20px; margin-bottom: 12px; color: grey">SALES PROGRESS</span>
+					</div>
+				</div>
+				<div id="r3_space_right">
+					<span style="margin-left: 20px; color: grey">Timeline Example</span>
+					<hr>
+					<div style="overflow-y: scroll">
+						<div id="r3_vertical_bar">
+							<div class="r3_nodes" style="top: 10px; border: 5px solid #C71C22"></div><span class="r3_node_text" style="top: 10px; color: grey">All Hands Meeting</span>
+							<div class="r3_nodes" style="top: 40px; border: 5px solid #DD5600"></div><span class="r3_node_text" style="top: 40px; color: grey">Yet another one, at 15:00 PM</span>
+							<div class="r3_nodes" style="top: 70px; border: 5px solid #73A839"></div><span class="r3_node_text" style="top: 70px; color: grey">Build the production release</span><div class="r3_new_tag" style="top: 40px"><span class="r3_new_tag_text">NEW</span></div>
+							<div class="r3_nodes" style="top: 100px; border: 5px solid #033C73"></div><span class="r3_node_text" style="top: 100px; color: grey">Something not important</span>
+							<div class="r3_nodes" style="top: 130px; border: 5px solid #DD5600"></div><span class="r3_node_text" style="top: 130px; color: grey">Yet another one, at 15:00 PM</span>
+							<div class="r3_nodes" style="top: 160px; border: 5px solid #73A839"></div><span class="r3_node_text" style="top: 160px; color: grey">Build the production release</span><div class="r3_new_tag"  style="top: 138px"><span class="r3_new_tag_text">NEW</span></div>
+							<div class="r3_nodes" style="top: 190px; border: 5px solid #2FA4E7"></div><span class="r3_node_text" style="top: 190px; color: grey">This dot has an info state</span>
+							<div class="r3_nodes" style="top: 220px; border: 5px solid #343A40"></div><span class="r3_node_text" style="top: 220px; color: grey">This dot has a dark state</span>
+							<div class="r3_nodes" style="top: 250px; border: 5px solid #C71C22"></div><span class="r3_node_text" style="top: 250px; color: grey">All Hands Meeting</span>
+							<div class="r3_nodes" style="top: 280px; border: 5px solid #DD5600"></div><span class="r3_node_text" style="top: 280px; color: grey">Yet another one, at 15:00 PM</span>
+							<div class="r3_nodes" style="top: 310px; border: 5px solid #73A839"></div><span class="r3_node_text" style="top: 310px; color: grey">Build the production release</span><div class="r3_new_tag"  style="top: 266px"><span class="r3_new_tag_text">NEW</span></div>
+							<div class="r3_nodes" style="top: 340px; border: 5px solid #033C73"></div><span class="r3_node_text" style="top: 340px; color: grey">Something not important</span>
+						</div>
+					</div>
+					<hr>
+					<div class="centralized_button">
+						<button>View All Messages</button>
+					</div>
+				</div>
+			</div>
 			<div id="div_r4">
 				<div class="r4_space_left">
 					<div id="r4_space_todos">
@@ -385,6 +440,80 @@
 	.div_r2_normal {
 		width: 12.5%;
 		text-align: center
+	}
+	
+	#div_r3 {
+		margin-bottom: 20px;
+		display: flex;
+		flex-direction: row
+	}
+	
+	#r3_space_left {
+		width: 50%;
+		border: 1px solid #000;
+		border-radius: 3px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		margin-right: 15;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#r3_space_left_center {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#r3_space_right {
+		width: 50%;
+		height: 450px;
+		border: 1px solid #000;
+		border-radius: 3px;
+		padding-top: 8px;
+		padding-bottom: 8px;
+		margin-left: 15;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#r3_vertical_bar {
+		height: 400px;
+		width:5px;
+		background-color: grey;
+		position: relative;
+		left: 20
+	}
+	
+	.r3_nodes {
+		height: 14px;
+		width: 14px;
+		border-radius: 14px;
+		background-color: white;
+		position: absolute;
+		left: -9
+	}
+	
+	.r3_node_text {
+		position: absolute;
+		left: 30;
+		width: 5000%
+	}
+	
+	.r3_new_tag {
+		position: relative;
+		left: 270px;
+		height: 12px;
+		width: 40px;
+		border: 5px solid #C71C22;
+		border-radius: 5px;
+		background-color: #C71C22
+	}
+	
+	.r3_new_tag_text {
+		color: white;
+		position: relative;
+		top: -5px;
+		left: 1px
 	}
 	
 	#div_r4 {
