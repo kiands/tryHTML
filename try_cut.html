@@ -2,8 +2,9 @@
 <div id="app">
 	<div class="sidebar">
 		<div class="sidebar__header">
-			<img class="logo" />
-			<h1 class="site-name">Administrator</h1>
+			<div>
+				<img class="logo" src="assets/menu.png" style="width: 40px; margin-right: 10px"/>
+			</div>
 		</div>
 		<div class="sidebar_content">
 			<ul class="navigation">
@@ -11,43 +12,43 @@
 					<span style="color: #033C73"><strong>MAIN NAVIGATION</strong></span>
 				</li>
 				<li class="navigation-link">
-					<img class="navigation-link__icon" />
+					<img class="navigation-link__icon" src="assets/rocket.png" style="width: 30px; margin-right: 10px"/>
 					<span class="navigation-link__text">Dashboards</span>
 				</li>
 				<li class="navigation-link">
-					<img class="navigation-link__icon" />
+					<img class="navigation-link__icon" src="assets/page.png" style="width: 30px; margin-right: 10px"/>
 					<span class="navigation-link__text">Pages</span>
 				</li>
 				<li class="expand">
 					<span style="color: #033C73"><strong>BOOTSTRAP COMPONENTS</strong></span>
 				</li>
 				<li class="navigation-link">
-					<img class="navigation-link__icon" />
+					<img class="navigation-link__icon" src="assets/diamond.png" style="width: 30px; margin-right: 10px"/>
 					<span class="navigation-link__text">Elements</span>
 				</li>
 				<li class="navigation-link">
-					<img class="navigation-link__icon" />
+					<img class="navigation-link__icon" src="assets/car.png" style="width: 30px; margin-right: 10px"/>
 					<span class="navigation-link__text">Components</span>
 				</li><li class="navigation-link">
-					<img class="navigation-link__icon" />
+					<img class="navigation-link__icon" src="assets/buddism.png" style="width: 30px; margin-right: 10px"/>
 					<span class="navigation-link__text">Form Elements</span>
 				</li>
 				<li class="navigation-link">
-					<img class="navigation-link__icon" />
+					<img class="navigation-link__icon" src="assets/ipad.png" style="width: 30px; margin-right: 10px"/>
 					<span class="navigation-link__text">Tables</span>
 				</li>
 				<li class="expand">
 					<span style="color: #033C73"><strong>DASHBOARD BOXES</strong></span>
 				</li>
 				<li class="navigation-link">
-					<img class="navigation-link__icon" />
+					<img class="navigation-link__icon" src="assets/chart.png" style="width: 30px; margin-right: 10px"/>
 					<span class="navigation-link__text">Chart Boxes</span>
 				</li>
 				<li class="expand">
 					<span style="color: #033C73"><strong>CHARTS</strong></span>
 				</li>
 				<li class="navigation-link">
-					<img class="navigation-link__icon" />
+					<img class="navigation-link__icon" src="assets/chart.png" style="width: 30px; margin-right: 10px"/>
 					<span class="navigation-link__text">ChartJS</span>
 				</li>
 			</ul>
@@ -58,23 +59,23 @@
 			<div class="header-controls--left">
 				<img class="control-item icon" />
 				<img class="control-item icon" />
-				<span>inspector</span>
+				<img src="assets/loupe.png" style="width: 40px; margin-right: 10px"/>
 			</div>
 			<div class="header-controls--right">
 				<img class="control-item icon" />
 				<img class="control-item icon" />
 				<img class="control-item avatar" />
-				<span class="control-item username">John Doe</span>
+				<img src="assets/user.png" style="width: 40px; margin-right: 10px"/>
 			</div>
 		</div>
 		<div class="workspace__content">
 			<div id="div_r1">
-				<span>Portfolio Performance</span>
+				<span style="margin-left: 20px">Portfolio Performance</span>
 				<hr>
 				<div id="div_r1_center">
 					<div class="div_r1_card">
 						<div class="r1_card_left">
-							<span>img</span>
+							<img src="assets/cd.png" style="width: 50px; margin-right: 10px"/>
 						</div>
 						<div class="r1_card_right">
 							<span style="color: gray">Cash Deposits</span>
@@ -87,7 +88,7 @@
 					</div>
 					<div class="div_r1_card">
 						<div class="r1_card_left">
-							<span>img</span>
+							<img src="assets/bag.png" style="width: 50px; margin-right: 10px"/>
 						</div>
 						<div class="r1_card_right">
 							<span style="color: gray">Invested Dividents</span>
@@ -100,7 +101,7 @@
 					</div>
 					<div class="div_r1_card">
 						<div class="r1_card_left">
-							<span>img</span>
+							<img src="assets/idea.png" style="width: 50px; margin-right: 10px"/>
 						</div>
 						<div class="r1_card_right">
 							<span style="color: gray">Capital Gains</span>
@@ -114,11 +115,11 @@
 				</div>
 				<hr>
 				<div class="centralized_button">
-					<button>View Complete Report</button>
+					<button class="btn-itself"><span style="color: white">View Complete Report</span></button>
 				</div>
 			</div>
 			<div id="div_r2">
-				<span>Company Agents Status</span>
+				<span style="margin-left: 20px">Company Agents Status</span>
 				<hr>
 				<div id="div_r2_center">
 					<table id="div_r2_table">
@@ -126,22 +127,24 @@
 							<span class="div_r2_items"><strong>#</strong></span><span class="div_r2_items"><strong>Avatar</strong></span><span class="div_r2_items"><strong>Name</strong></span><span class="div_r2_items"><strong>Company</strong></span><span class="div_r2_items"><strong>Status</strong></span><span class="div_r2_items"><strong>Due Date</strong></span><span class="div_r2_items"><strong>Target Achievement</strong></span><span class="div_r2_items"><strong>Actions</strong></span>
 						</div>
 						<div class="div_r2_tr">
-							<span class="div_r2_normal">#54</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Juan C. Cargill</span><span class="div_r2_normal">Micro Electronics</span><span class="div_r2_normal">Canceled</span><span class="div_r2_normal">12 Dec</span><span class="div_r2_normal">71%</span><span class="div_r2_normal">Hire|Fire</span>
+							<span class="div_r2_normal">#54</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Juan C. Cargill</span><span class="div_r2_normal">Micro Electronics</span><div class="r2_subcontainer"><div class="r2_innercontainer"><span class="r2_contained_span">Canceled</span></div></div><span class="div_r2_normal">12 Dec</span><div class="r2_subcontainer" style="justify-content: start"><span>71%</span><div style="position: relative"><div class="r2_progress" style="background-color: #e9ecef"></div><div class="r2_progress" style="width: 71px; background-color: #C71C22"></div></div></div><span class="div_r2_normal">Hire|Fire</span>
 						</div>
 						<div class="div_r2_tr">
-							<span class="div_r2_normal">#55</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Johnathan Phelan</span><span class="div_r2_normal">Hatchworks</span><span class="div_r2_normal">On Hold</span><span class="div_r2_normal">12 Dec</span><span class="div_r2_normal">54%</span><span class="div_r2_normal">Hire|Fire</span>
+							<span class="div_r2_normal">#55</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Johnathan Phelan</span><span class="div_r2_normal">Hatchworks</span><div class="r2_subcontainer"><div class="r2_innercontainer" style="border-color: #2FA4E7; background-color: #2FA4E7"><span class="r2_contained_span">On Hold</span></div></div><span class="div_r2_normal">12 Dec</span><div class="r2_subcontainer" style="justify-content: start"><span>54%</span><div style="position: relative"><div class="r2_progress" style="background-color: #e9ecef"></div><div class="r2_progress" style="width: 54px; background-color: #DD5600"></div></div></div><span class="div_r2_normal">Hire|Fire</span>
 						</div>
 						<div class="div_r2_tr">
-							<span class="div_r2_normal">#56</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Darrell Lowe</span><span class="div_r2_normal">Riddle Electronics</span><span class="div_r2_normal">In Progress</span><span class="div_r2_normal">12 Dec</span><span class="div_r2_normal">97%</span><span class="div_r2_normal">Hire|Fire</span>
+							<span class="div_r2_normal">#56</span><span class="div_r2_normal">#</span><span class="div_r2_normal">Darrell Lowe</span><span class="div_r2_normal">Riddle Electronics</span><div class="r2_subcontainer"><div class="r2_innercontainer" style="width: 100px; border-color: #DD5600; background-color: #DD5600"><span class="r2_contained_span">In Progress</span></div></div><span class="div_r2_normal">12 Dec</span><div class="r2_subcontainer" style="justify-content: start"><span>71%</span><div style="position: relative"><div class="r2_progress" style="background-color: #e9ecef"></div><div class="r2_progress" style="width: 97px; background-color: #73A839"></div></div></div><span class="div_r2_normal">Hire|Fire</span>
 						</div>
 						<div class="div_r2_tr">
-							<span class="div_r2_normal">#57</span><span class="div_r2_normal">#</span><span class="div_r2_normal">George T. Cottrell</span><span class="div_r2_normal">Pixelcloud</span><span class="div_r2_normal">Completed</span><span class="div_r2_normal">12 Dec</span><span class="div_r2_normal">88%</span><span class="div_r2_normal">Hire|Fire</span>
+							<span class="div_r2_normal">#57</span><span class="div_r2_normal">#</span><span class="div_r2_normal">George T. Cottrell</span><span class="div_r2_normal">Pixelcloud</span><div class="r2_subcontainer"><div class="r2_innercontainer" style="width: 90px; border-color: #73A839; background-color: #73A839"><span class="r2_contained_span">Completed</span></div></div><span class="div_r2_normal">12 Dec</span><div class="r2_subcontainer" style="justify-content: start"><span>71%</span><div style="position: relative"><div class="r2_progress" style="background-color: #e9ecef"></div><div class="r2_progress" style="width: 88px; background-color: #2FA4E7"></div></div></div><span class="div_r2_normal">Hire|Fire</span>
 						</div>
 					</table>
 				</div>
 				<hr>
 				<div class="centralized_button">
-					<button>View Complete Report</button>
+					<button class="btn-itself" style="background-color: #343A40; border-color: #343A40">
+						<span style="color: white">View Complete Report</span>
+					</button>
 				</div>
 			</div>
 			<div id="div_r3">
@@ -171,7 +174,13 @@
 						<div style="margin-left: 20px; margin-right: 20px">
 							
 						</div>
-						<span style="margin-top: 20px; margin-left: 20px; margin-bottom: 12px; color: grey">SALES PROGRESS</span>
+						<div class="r2_subcontainer" style="justify-content: start; margin-top: 10px; margin-left: 23px">
+							<div style="position: relative">
+								<div class="r2_progress" style="width: 540px; background-color: #e9ecef"></div>
+								<div class="r2_progress" style="width: 216px; background-color: #033C73"></div>
+							</div>
+						</div>
+						<span style="margin-top: 20px; margin-left: 20px; margin-bottom: 12px; color: grey">YoY Growth</span>
 					</div>
 				</div>
 				<div id="r3_space_right">
@@ -179,37 +188,117 @@
 					<hr>
 					<div style="overflow-y: scroll">
 						<div id="r3_vertical_bar">
-							<div class="r3_nodes" style="top: 10px; border: 5px solid #C71C22"></div><span class="r3_node_text" style="top: 10px; color: grey">All Hands Meeting</span>
-							<div class="r3_nodes" style="top: 40px; border: 5px solid #DD5600"></div><span class="r3_node_text" style="top: 40px; color: grey">Yet another one, at 15:00 PM</span>
-							<div class="r3_nodes" style="top: 70px; border: 5px solid #73A839"></div><span class="r3_node_text" style="top: 70px; color: grey">Build the production release</span><div class="r3_new_tag" style="top: 40px"><span class="r3_new_tag_text">NEW</span></div>
-							<div class="r3_nodes" style="top: 100px; border: 5px solid #033C73"></div><span class="r3_node_text" style="top: 100px; color: grey">Something not important</span>
-							<div class="r3_nodes" style="top: 130px; border: 5px solid #DD5600"></div><span class="r3_node_text" style="top: 130px; color: grey">Yet another one, at 15:00 PM</span>
-							<div class="r3_nodes" style="top: 160px; border: 5px solid #73A839"></div><span class="r3_node_text" style="top: 160px; color: grey">Build the production release</span><div class="r3_new_tag"  style="top: 138px"><span class="r3_new_tag_text">NEW</span></div>
-							<div class="r3_nodes" style="top: 190px; border: 5px solid #2FA4E7"></div><span class="r3_node_text" style="top: 190px; color: grey">This dot has an info state</span>
-							<div class="r3_nodes" style="top: 220px; border: 5px solid #343A40"></div><span class="r3_node_text" style="top: 220px; color: grey">This dot has a dark state</span>
-							<div class="r3_nodes" style="top: 250px; border: 5px solid #C71C22"></div><span class="r3_node_text" style="top: 250px; color: grey">All Hands Meeting</span>
-							<div class="r3_nodes" style="top: 280px; border: 5px solid #DD5600"></div><span class="r3_node_text" style="top: 280px; color: grey">Yet another one, at 15:00 PM</span>
-							<div class="r3_nodes" style="top: 310px; border: 5px solid #73A839"></div><span class="r3_node_text" style="top: 310px; color: grey">Build the production release</span><div class="r3_new_tag"  style="top: 266px"><span class="r3_new_tag_text">NEW</span></div>
-							<div class="r3_nodes" style="top: 340px; border: 5px solid #033C73"></div><span class="r3_node_text" style="top: 340px; color: grey">Something not important</span>
+							<div class="r3_nodes" style="top: 10px; border-color: #C71C22"></div><span class="r3_node_text" style="top: 10px">All Hands Meeting</span>
+							<div class="r3_nodes" style="top: 40px; border-color: #DD5600"></div><span class="r3_node_text" style="top: 40px">Yet another one, at 15:00 PM</span>
+							<div class="r3_nodes" style="top: 70px; border-color: #73A839"></div><span class="r3_node_text" style="top: 70px">Build the production release</span><div class="r3_new_tag" style="top: 40px"><span class="r3_new_tag_text">NEW</span></div>
+							<div class="r3_nodes" style="top: 100px; border-color: #033C73"></div><span class="r3_node_text" style="top: 100px">Something not important</span>
+							<div class="r3_nodes" style="top: 130px; border-color: #DD5600"></div><span class="r3_node_text" style="top: 130px">Yet another one, at 15:00 PM</span>
+							<div class="r3_nodes" style="top: 160px; border-color: #73A839"></div><span class="r3_node_text" style="top: 160px">Build the production release</span><div class="r3_new_tag"  style="top: 138px"><span class="r3_new_tag_text">NEW</span></div>
+							<div class="r3_nodes" style="top: 190px; border-color: #2FA4E7"></div><span class="r3_node_text" style="top: 190px">This dot has an info state</span>
+							<div class="r3_nodes" style="top: 220px; border-color: #343A40"></div><span class="r3_node_text" style="top: 220px">This dot has a dark state</span>
+							<div class="r3_nodes" style="top: 250px; border-color: #C71C22"></div><span class="r3_node_text" style="top: 250px">All Hands Meeting</span>
+							<div class="r3_nodes" style="top: 280px; border-color: #DD5600"></div><span class="r3_node_text" style="top: 280px">Yet another one, at 15:00 PM</span>
+							<div class="r3_nodes" style="top: 310px; border-color: #73A839"></div><span class="r3_node_text" style="top: 310px">Build the production release</span><div class="r3_new_tag"  style="top: 266px"><span class="r3_new_tag_text">NEW</span></div>
+							<div class="r3_nodes" style="top: 340px; border-color: #033C73"></div><span class="r3_node_text" style="top: 340px">Something not important</span>
 						</div>
 					</div>
 					<hr>
 					<div class="centralized_button">
-						<button>View All Messages</button>
+						<button class="btn-itself" style="background-color: #6610F2; border-color: #6610F2">
+							<span style="color: white">View All Messages</span>
+						</button>
 					</div>
 				</div>
 			</div>
 			<div id="div_r4">
 				<div class="r4_space_left">
-					<div id="r4_space_todos">
-						<h1>Task List</h1>
-						<input id="add"><button id="addbtn" onClick="addTodo()">Ìí¼Ó</button>
-						<div>
-							<ul id="todos"></ul>
+					<div style="display: flex; align-items: center; justify-content: start">
+						<span style="margin-left: 20px">Tasks List</span>
+					</div>
+					<hr>
+					<div style="height: 400px; overflow-y: scroll">
+						<div id="r4_left_center">
+							<div class="r4_tasks">
+								<input type="checkbox" style="margin-left: 20px; margin-right: 20px">
+								<div class="r4_task_center">
+									<div style="display: flex; flex-direction: row">
+										<span style="margin-right: 20px">Wash the car</span>
+										<div style="height: 20px; width: 80px; padding-left: 10px; border-radius: 6px; background-color: #C71C22">
+											<span style="color: white">Rejected</span>
+										</div>
+									</div>
+									<span style="color: grey">Written by Bob</span>
+								</div>
+							</div>
+							<div class="r4_tasks">
+								<input type="checkbox" style="margin-left: 20px; margin-right: 20px">
+								<div class="r4_task_center">
+									<div style="display: flex; flex-direction: row">
+										<span style="margin-right: 20px">Task with dropdown menu</span>
+									</div>
+									<div style="display: flex; flex-direction: row">
+										<span style="margin-right: 20px; color: grey">By Johnny</span>
+										<div style="height: 20px; width: 46px; padding-left: 10px; border-radius: 10px; background-color: #2FA4E7">
+											<span style="color: white">New</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="r4_tasks">
+								<input type="checkbox" style="margin-left: 20px; margin-right: 20px">
+								<div class="r4_task_center">
+									<div style="display: flex; flex-direction: row">
+										<span style="margin-right: 20px">Badge on the right task</span>
+									</div>
+									<span style="color: grey">This task has show on hover actions!</span>
+								</div>
+								<div style="height: 20px; width: 100px; margin-right: 20px; padding-left: 20px; border-radius: 10px; background-color: #73A839">
+									<span style="color: white">Latest Task</span>
+								</div>
+							</div>
+							<div class="r4_tasks">
+								<input type="checkbox" style="margin-left: 20px; margin-right: 20px">
+								<div class="r4_task_center">
+									<div style="display: flex; flex-direction: row">
+										<span style="margin-right: 20px">Go grocery shopping</span>
+									</div>
+									<span style="color: grey">A short description for this todo item</span>
+								</div>
+							</div>
+							<div class="r4_tasks">
+								<input type="checkbox" style="margin-left: 20px; margin-right: 20px">
+								<div class="r4_task_center">
+									<div style="display: flex; flex-direction: row">
+										<span style="margin-right: 20px">Wash the car</span>
+										<div style="height: 20px; width: 80px; padding-left: 10px; border-radius: 6px; background-color: #C71C22">
+											<span style="color: white">Rejected</span>
+										</div>
+									</div>
+									<span style="color: grey">Written by Bob</span>
+								</div>
+							</div>
+							<div class="r4_tasks">
+								<input type="checkbox" style="margin-left: 20px; margin-right: 20px">
+								<div class="r4_task_center">
+									<div style="display: flex; flex-direction: row">
+										<span style="margin-right: 20px">Task with dropdown menu</span>
+									</div>
+									<div style="display: flex; flex-direction: row">
+										<span style="margin-right: 20px; color: grey">By Johnny</span>
+										<div style="height: 20px; width: 46px; padding-left: 10px; border-radius: 10px; background-color: #2FA4E7">
+											<span style="color: white">New</span>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
+					<hr>
+					<div class="centralized_button"  style="margin-right: 30px; justify-content: flex-end">
+						<button class="btn-itself"><span style="color: white">Add Task</span></button>
+					</div>		
 				</div>
-				<div class="r4_space_left">
+				<div class="r4_space_right">
 					<div class="r4_card_group_left">
 						<div class="r4_card" style="border: 1px solid #73A839; border-bottom: 3px solid #73A839">
 							<span><strong>$874</strong></span>
@@ -308,7 +397,7 @@
 <style>
 	#app {
 		display: flex;
-		flex-direction: row;
+		flex-direction: row
 	}
 	
 	.sidebar {
@@ -322,7 +411,9 @@
 		border: 1px solid #000;
 		margin: 0;
 		display: flex;
-		align-items: center
+		align-items: center;
+		justify-content: flex-end;
+		background-color: #FCFCFC
 	}
 	
 	.sidebar_content {
@@ -358,11 +449,13 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: center
+		align-items: center;
+		background-color: #F0F0F0
 	}
 	
 	.workspace__content {
-		margin: 20px
+		padding: 20px;
+		background-color: #E0E0E0
 	}
 	
 	.expand {
@@ -374,12 +467,21 @@
 		color: grey;
 		margin-left: 25px;
 		margin-bottom: 10px;
-		list-style: none
+		list-style: none;
+		display: flex;
+		align-items: center
 	}
 	
 	.centralized_button {
 		display: flex;
 		justify-content: center
+	}
+	
+	.btn-itself {
+		height: 30px;
+		border-radius: 5px;
+		border-color: #033C73;
+		background-color: #033C73
 	}
 	
 	hr {
@@ -388,17 +490,18 @@
 	}
 	
 	#div_r1{
-		border: 1px solid #000;
+		border: 1px solid grey;
 		border-radius: 3px;
 		padding-top: 8px;
 		padding-bottom: 8px;
-		margin-bottom: 20px
+		margin-bottom: 20px;
+		background-color: white
 	}
 	
 	#div_r1_center {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-between
 	}
 	
 	.div_r1_card {
@@ -408,6 +511,7 @@
 	}
 	
 	.r1_card_left {
+		margin-left: 30px;
 		display: flex;
 		justify-content: center;
 		align-items: center
@@ -419,11 +523,12 @@
 	}
 	
 	#div_r2 {
-		border: 1px solid #000;
+		border: 1px solid grey;
 		border-radius: 3px;
 		padding-top: 8px;
 		padding-bottom: 8px;
-		margin-bottom: 20px
+		margin-bottom: 20px;
+		background-color: white
 	}
 	
 	.div_r2_tr {
@@ -442,21 +547,56 @@
 		text-align: center
 	}
 	
+	.r2_contained_span {
+		color: white
+	}
+	
+	.r2_subcontainer {
+		margin-top: 2px;
+		margin-bottom:2px;
+		width: 12.5%;
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
+	
+	.r2_innercontainer {
+		height: 14px;
+		width: 80px;
+		border: 5px solid #C71C22;
+		border-radius: 6px;
+		border-color: #C71C22;
+		background-color: #C71C22;
+		display: flex;
+		align-items: center;
+		justify-content: center
+	}
+	
+	.r2_progress {
+		position: absolute;
+		top: -10px;
+		height:20px;
+		width: 100px;
+		border-radius: 5px
+	}
+	
 	#div_r3 {
 		margin-bottom: 20px;
 		display: flex;
-		flex-direction: row
+		flex-direction: row;
+		background-color: E0E0E0
 	}
 	
 	#r3_space_left {
 		width: 50%;
-		border: 1px solid #000;
+		border: 1px solid grey;
 		border-radius: 3px;
 		padding-top: 8px;
 		padding-bottom: 8px;
 		margin-right: 15;
 		display: flex;
 		flex-direction: column;
+		background-color: white
 	}
 	
 	#r3_space_left_center {
@@ -467,13 +607,14 @@
 	#r3_space_right {
 		width: 50%;
 		height: 450px;
-		border: 1px solid #000;
+		border: 1px solid grey;
 		border-radius: 3px;
 		padding-top: 8px;
 		padding-bottom: 8px;
 		margin-left: 15;
 		display: flex;
 		flex-direction: column;
+		background-color: white
 	}
 	
 	#r3_vertical_bar {
@@ -487,6 +628,7 @@
 	.r3_nodes {
 		height: 14px;
 		width: 14px;
+		border: 5px solid;
 		border-radius: 14px;
 		background-color: white;
 		position: absolute;
@@ -494,9 +636,10 @@
 	}
 	
 	.r3_node_text {
+		color: grey;
+		width: 5000%;
 		position: absolute;
-		left: 30;
-		width: 5000%
+		left: 30
 	}
 	
 	.r3_new_tag {
@@ -517,44 +660,69 @@
 	}
 	
 	#div_r4 {
-		border: 1px solid #000;
-		border-radius: 3px;
-		padding: 8px;
 		margin-bottom: 20px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between
+		justify-content: space-between;
+		background-color: E0E0E0
 	}
 	
 	.r4_space_left {
+		border: 1px solid grey;
+		border-radius: 3px;
 		width: 50%;
+		padding-top: 8px;
+		padding-bottom: 8px;
 		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		background-color: white
 	}
 	
-	#r4_space_todos {
-		padding: 20px;
-		margin: 20px
+	#r4_left_center {
+		display: flex;
+		flex-direction: column;
+		justify-content: start
+	}
+	
+	.r4_tasks {
+		height: 80px;
+		border-bottom: 1px solid #000;
+		display: flex;
+		justify-content: start;
+		align-items: center
+	}
+	
+	.r4_task_center {
+		display: flex;
+		justify-content: start;
+		flex-direction: column;
+		flex-grow: 1
 	}
 	
 	.r4_space_right {
 		width: 50%;
+		margin-left: 60px;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between
+		justify-content: space-between;
+		background-color: white
 	}
 	
 	.r4_card_group_left {
-		margin-top:30px;
+		padding-top:30px;
 		width: 50%;
 		display: flex;
-		flex-direction: column
+		flex-direction: column;
+		background-color: E0E0E0
 	}
 	
 	.r4_card_group_right {
-		margin-top:30px;
+		padding-top:30px;
 		width: 50%;
 		display: flex;
-		flex-direction: column
+		flex-direction: column;
+		background-color: E0E0E0
 	}
 	
 	.r4_card {
@@ -567,14 +735,16 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: start;
-		align-items: end
+		align-items: end;
+		background-color: white
 	}
 	
 	#div_r5 {
-		border: 1px solid #000;
+		border: 1px solid grey;
 		border-radius: 3px;
 		padding-top: 8px;
-		padding-bottom: 8px
+		padding-bottom: 8px;
+		background-color: white
 	}
 	
 	.div_r5_space {
